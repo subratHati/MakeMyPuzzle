@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import generateTiles from "../utils/generateTiles";
 import PuzzleBoard from "../components/PuzzleBoard";
 import shuffleTiles from "../utils/shuffleTiles";
-import Winmodal from "../components/WinModal";
+import WinModal from "../components/WinModal";
 
 function PlayPuzzle() {
 
@@ -209,7 +209,7 @@ function PlayPuzzle() {
             </button>
 
             {/* if win show this modal */}
-            <Winmodal
+            <WinModal
                 isOpen={showModal}
                 onClose={() => setShowModal(false)}
                 moveCount={moveCount}
